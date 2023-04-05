@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "login": {
+      "type": "string"
+    },
+    "pic_url": {
+      "type": "string"
+    },
+    "public_favorites_count": {
+      "type": "integer"
+    },
+    "following": {
+      "type": "integer"
+    },
+    "followers": {
+      "type": "integer"
+    },
+    "pro": {
+      "type": "null"
+    },
+    "account_details": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "private_favorites_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "email",
+        "private_favorites_count"
+      ]
+    }
+  },
+  "required": [
+    "login",
+    "pic_url",
+    "public_favorites_count",
+    "following",
+    "followers",
+    "pro",
+    "account_details"
+  ]
+}

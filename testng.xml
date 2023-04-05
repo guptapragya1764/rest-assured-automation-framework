@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+    <listener class-name="com.nagp.listeners.FrameworkListener"/>
+    <listener class-name="com.nagp.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="All Project Test" parallel="methods">
+    <classes>
+      <class name="com.nagp.tests.UserTest"/>
+      <class name="com.nagp.tests.QuoteTest"/>
+      <class name="com.nagp.tests.ActivityTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
